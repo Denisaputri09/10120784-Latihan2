@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Tanggal pengerjaan : 28/04/2023
+    Nim : 10120784
+    Nama : Denisa Alyaa Putri
+    Kelas : IF-9 -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#43b3e6">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_welcome_logo"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="100dp">
+        </ImageView>
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img1"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColorHint="@color/white">
+        </EditText>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:textColorHint="@color/white">
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/white"
+            android:text="LOGIN"
+            android:backgroundTint="@color/green">
+        </Button>
+
+        <TextView
+            android:id="@+id/txtor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_login"
+            android:text="OR"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal">
+        </TextView>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_below="@+id/txtor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/green"
+            android:text="CONNECT WITH FACEBOOK"
+            android:textColor="@color/white"
+            android:layout_margin="25dp"
+            android:drawableLeft="@drawable/fb">
+        </Button>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/button2"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:text="doesn't have account?"
+                android:textColor="@color/white"></TextView>
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:onClick="Register"
+                android:backgroundTint="@color/green"
+                android:textColor="@color/white"
+                android:layout_marginLeft="5dp">
+            </Button>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

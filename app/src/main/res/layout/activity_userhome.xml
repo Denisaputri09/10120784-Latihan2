@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Tanggal pengerjaan : 28/04/2023
+    Nim : 10120784
+    Nama : Denisa Alyaa Putri
+    Kelas : IF-9 -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserhomeActivity"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/ic_header_profile"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_side_menu"
+                android:layout_marginTop="20dp">
+            </ImageView>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_notification"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="200dp"></ImageView>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/person"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="135dp"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/roundedcorner"
+            android:src="@drawable/person"></ImageView>
+
+        <TextView
+            android:id="@+id/txt1_u"
+            android:layout_below="@id/person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ahmad Hartaji"
+            android:textColor="@color/green"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt2_u"
+            android:layout_below="@id/txt1_u"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Blood Type : B"
+            android:textSize="15sp"
+            android:textColor="#969697"
+            android:gravity="center"
+            android:layout_marginTop="5dp">
+        </TextView>
+
+        <View
+            android:id="@+id/garis1"
+            android:layout_below="@id/txt2_u"
+            android:layout_width="match_parent"
+            android:visibility="visible"
+            android:layout_height="1dp"
+            android:background="#d1d2d4"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/txt3_u"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/garis1"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="75"
+                android:textColor="@color/green"
+                android:textSize="30sp"
+                android:layout_marginLeft="50dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textColor="@color/green"
+                android:textSize="30sp"
+                android:layout_marginLeft="72dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="330"
+                android:textColor="@color/green"
+                android:textSize="30sp"
+                android:layout_marginLeft="70dp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/txt4_u"
+            android:layout_below="@id/txt3_u"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BLOOD GIVE"
+                android:textColor="#969697"
+                android:layout_marginLeft="30dp">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BLOOD RECEIVED"
+                android:textColor="#969697"
+                android:layout_marginLeft="20dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="THANKS"
+                android:textColor="#969697"
+                android:layout_marginLeft="35dp">
+            </TextView>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/garis2"
+            android:layout_below="@id/txt4_u"
+            android:layout_width="match_parent"
+            android:visibility="visible"
+            android:layout_height="1dp"
+            android:background="#d1d2d4"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/gmbr1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/garis2"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_search_donor"
+                android:layout_marginLeft="50dp">
+            </ImageView>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_blood_needed"
+                android:layout_marginLeft="60dp">
+            </ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/txt5_u"
+            android:layout_below="@id/gmbr1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search Donor"
+                android:textColor="#000000"
+                android:layout_marginLeft="60dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blood Needed"
+                android:textColor="#000000"
+                android:layout_marginLeft="70dp">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/txt6_u"
+            android:layout_below="@id/txt5_u"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search donor near you"
+                android:textSize="10sp"
+                android:textColor="#969697"
+                android:layout_marginLeft="55dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4 Users need blood"
+                android:textSize="10sp"
+                android:textColor="#969697"
+                android:layout_marginLeft="62dp">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/gmbr2"
+            android:layout_below="@id/txt6_u"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_message"
+                android:layout_marginLeft="50dp">
+            </ImageView>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_donor_history"
+                android:layout_marginLeft="60dp">
+            </ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/txt7_u"
+            android:layout_below="@id/gmbr2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Message"
+                android:textColor="#000000"
+                android:layout_marginLeft="70dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Donor History"
+                android:textColor="#000000"
+                android:layout_marginLeft="90dp">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/txt8_u"
+            android:layout_below="@id/txt7_u"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 New Messages"
+                android:textSize="10sp"
+                android:textColor="#969697"
+                android:layout_marginLeft="60dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 Gives, 2 Received"
+                android:textSize="10sp"
+                android:textColor="#969697"
+                android:layout_marginLeft="83dp">
+            </TextView>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

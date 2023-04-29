@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Tanggal pengerjaan : 28/04/2023
+    Nim : 10120784
+    Nama : Denisa Alyaa Putri
+    Kelas : IF-9 -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerifyaccActivity"
+    android:background="@color/green">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt1_v"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verify your Account"
+            android:textColor="@color/white"
+            android:textSize="38sp"
+            android:gravity="center"
+            android:layout_marginTop="150dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt2_v"
+            android:layout_below="@id/txt1_v"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We have send verification code to your email"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/txt3_v"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt2_v"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:text="enter verification code here"
+            android:textColor="@color/white"
+            android:textSize="15sp"></EditText>
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_below="@id/txt3_v"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:text="SEND"
+            android:onClick="SEND"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/white"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="50dp">
+        </Button>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/btn_send"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:text="doesn't get the code?"
+                android:textColor="#D1D1D1"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Resend"
+                android:textColor="@color/white"></TextView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
